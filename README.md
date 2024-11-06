@@ -1,50 +1,128 @@
 # Gemini LLM Applications
 
-This repository contains a collection of applications built using the Google Generative AI Gemini model. The applications demonstrate various use cases for the Gemini model, including text-to-SQL, conversational chat, document question answering, and image analysis.
+This repository contains a collection of applications built using the Google Generative AI Gemini model. These applications demonstrate various use cases for the Gemini model, including text-to-SQL, conversational chat, document question answering, and image analysis.
 
-## Applications
+## List of Applications
 
-### 1. Conversational Gemini Chat
-
-A simple chat application that uses the Gemini model to respond to user input.
-
-- Code: `02conversationalgemini/qachat.py`
-- Description: This application demonstrates how to use the Gemini model to generate human-like responses to user input.
-
-### 2. Text-to-SQL
-
-An application that uses the Gemini model to convert natural language queries into SQL queries.
-
-- Code: `06sqlllm/app.py`
-- Description: This application demonstrates how to use the Gemini model to generate SQL queries from natural language input.
-
-### 3. Document Question Answering
-
-An application that uses the Gemini model to answer questions based on a set of documents.
-
-- Code: `05documentqa/app.py`
-- Description: This application demonstrates how to use the Gemini model to answer questions based on a set of documents.
-
-### 4. Image Analysis
+### 1. Gemini Vision Application
 
 An application that uses the Gemini model to analyze images and generate text descriptions.
 
-- Code: `01geminillmapp/vision.py`
-- Description: This application demonstrates how to use the Gemini model to generate text descriptions of images.
+- **Location**: `01geminillmapp/vision.py`
+- **Features**:
+  - Upload images (PNG, JPG, JPEG)
+  - Image analysis with or without additional prompts
+  - Generate detailed descriptions of uploaded images
 
-### 5. Invoice Extractor
+### 2. Conversational Gemini Chat
 
-An application that uses the Gemini model to extract information from invoices.
+A simple chat application that uses the Gemini model to respond to user input.
 
-- Code: `03invoice/app.py`
-- Description: This application demonstrates how to use the Gemini model to extract information from invoices.
+- **Location**: `02conversationalgemini/qachat.py`
+- **Features**:
+  - Interactive chat interface
+  - Stored chat history
+  - Streaming responses
 
-### 6. Chat with PDF
+### 3. Invoice Extraction
 
-An application that uses the Gemini model to answer questions based on a PDF document.
+An application that uses Gemini to extract information from invoices.
 
-- Code: `04chatwithpdf/app.py`
-- Description: This application demonstrates how to use the Gemini model to answer questions based on a PDF document.
+- **Location**: `03invoice/app.py`
+- **Features**:
+  - Invoice image upload
+  - Automatic information extraction
+  - Invoice detail analysis
+
+### 4. Chat with PDF
+
+An application that allows users to ask questions based on PDF documents.
+
+- **Location**: `04chatwithpdf/app.py`
+- **Features**:
+  - Multiple PDF upload
+  - PDF to text conversion
+  - Contextual Q&A
+
+### 5. Document Q&A
+
+An application for answering questions based on a set of documents.
+
+- **Location**: `05documentqa/app.py`
+- **Features**:
+  - Document vector embedding
+  - Similarity search
+  - Contextual answers
+
+### 6. Text-to-SQL
+
+An application that converts natural language queries to SQL queries.
+
+- **Location**: `06sqlllm/app.py`
+- **Features**:
+  - Natural language to SQL conversion
+  - Automatic query execution
+  - Query results display
+
+### 7. CV Roast
+
+An application for CV evaluation with sharp criticism.
+
+- **Location**: `07cvroast/app.py`
+- **Features**:
+  - CV analysis against job descriptions
+  - Skill development suggestions
+  - Match percentage
+
+### 8. ATS (Applicant Tracking System)
+
+An application to evaluate CVs against job requirements.
+
+- **Location**: `08ats/app.py`
+- **Features**:
+  - CV evaluation
+  - Keyword analysis
+  - Improvement suggestions
+
+### 9. Food Critics
+
+A food criticism application with a sarcastic style.
+
+- **Location**: `09foodcritics/app.py`
+- **Features**:
+  - Food image analysis
+  - Lifestyle critique
+  - Healthy food suggestions
+
+### 10. YouTube Transcript
+
+An application to convert YouTube transcripts into detailed notes.
+
+- **Location**: `10youtubetranscript/app.py`
+- **Features**:
+  - Transcript extraction
+  - Video summarization
+  - Thumbnail display
+
+### 11. CrewAI YouTube Blog
+
+An application to create blogs from YouTube content.
+
+- **Location**: `11crewyttoblog/`
+- **Features**:
+  - Video search
+  - Content analysis
+  - Automatic blog creation
+
+### 12. CrewAI News
+
+An application to generate news using CrewAI.
+
+- **Location**: `12crewnews/`
+- **Features**:
+  - News research
+  - Article writing
+  - Serper API integration
 
 ## Requirements
 
@@ -53,7 +131,8 @@ An application that uses the Gemini model to answer questions based on a PDF doc
 - Streamlit
 - SQLite
 
-## Setup
+## Notes
 
-1. Set up a Google Generative AI API key and add it to your environment variables
-2. Run the application using `streamlit run app.py`
+- Ensure all API keys are properly configured
+- Some applications may require additional setup (like databases)
+- Detailed documentation available in each application folder
